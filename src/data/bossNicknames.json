@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "description": "母题类型 → 童趣 Boss 外号（A1 预置，可由 scripts/generate_boss_nicknames.py 批量更新）",
+  "entries": [
+    {
+      "topicTypeId": "equal_share_division",
+      "bossKeys": ["division_slime"],
+      "topicTypeLabel": "平均分问题",
+      "dailyNickname": "分糖大盗",
+      "motherTopicSummary": "分东西每人几份",
+      "topicExamples": "84颗糖分给7人每人几颗？总量÷份数=每份",
+      "taunt": "想分我的糖？先算算每人能拿几颗！",
+      "shareHook": "我们班今天在打「分糖大盗」！",
+      "classTalk": "你会用「总数÷人数」算每人几份吗？"
+    },
+    {
+      "topicTypeId": "array_multiply",
+      "bossKeys": ["multiply_golem"],
+      "topicTypeLabel": "乘法应用（几组几个）",
+      "dailyNickname": "采购买笔怪",
+      "motherTopicSummary": "每组几个×买几组",
+      "topicExamples": "每盒7支彩笔，买8盒一共多少支？用乘法一步算总数",
+      "taunt": "不会乘法？别想从我手里抢走彩笔！",
+      "shareHook": "采购买笔怪出没！我们班在练乘法应用～",
+      "classTalk": "「每份数量×份数」你会列式吗？"
+    },
+    {
+      "topicTypeId": "two_step_word",
+      "bossKeys": ["word_dragon"],
+      "topicTypeLabel": "两步应用题",
+      "dailyNickname": "零花钱巨龙",
+      "motherTopicSummary": "先求一部分，再合并或比较",
+      "topicExamples": "书15元，笔比书贵12元笔多少钱？再算一共要花多少？",
+      "taunt": "两步都算不对？我的金币可不会给你！",
+      "shareHook": "零花钱巨龙来了！两步应用题敢挑战吗？",
+      "classTalk": "你会先算中间量，再算最终答案吗？"
+    },
+    {
+      "topicTypeId": "cutting_problem",
+      "bossKeys": [],
+      "topicTypeLabel": "切刀问题",
+      "dailyNickname": "切猪肉怪",
+      "motherTopicSummary": "切几段要几刀",
+      "topicExamples": "猪肠切8块要几刀？切18块要几刀？刀数=段数-1",
+      "taunt": "切几刀都能算错？我的香肠可不给你吃！",
+      "shareHook": "切猪肉怪上线！刀数比段数少1，记住口诀！",
+      "classTalk": "切8块要7刀，切18块要17刀——段数减1就是刀数！"
+    }
+  ]
+}

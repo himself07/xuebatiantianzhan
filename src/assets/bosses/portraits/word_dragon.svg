@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c2d12"/>
+      <stop offset="100%" stop-color="#431407"/>
+    </linearGradient>
+    <linearGradient id="body" x1="30%" y1="0%" x2="70%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="50%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+    <linearGradient id="wing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#9a3412"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="48" fill="url(#bg)"/>
+  <ellipse cx="120" cy="200" rx="70" ry="100" fill="url(#wing)" opacity="0.9" transform="rotate(-25 120 200)"/>
+  <ellipse cx="392" cy="200" rx="70" ry="100" fill="url(#wing)" opacity="0.9" transform="rotate(25 392 200)"/>
+  <ellipse cx="256" cy="300" rx="130" ry="110" fill="url(#body)" filter="url(#glow)"/>
+  <circle cx="220" cy="270" r="20" fill="#fff"/>
+  <circle cx="292" cy="270" r="20" fill="#fff"/>
+  <circle cx="226" cy="276" r="10" fill="#431407"/>
+  <circle cx="298" cy="276" r="10" fill="#431407"/>
+  <path d="M236 310 Q256 330 276 310" stroke="#7c2d12" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M256 140 L230 200 L282 200 Z" fill="url(#body)"/>
+  <rect x="210" y="350" width="92" height="72" rx="10" fill="#fef3c7" stroke="#fcd34d" stroke-width="4"/>
+  <line x1="230" y1="375" x2="282" y2="375" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+  <line x1="230" y1="395" x2="270" y2="395" stroke="#d97706" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="256" cy="120" rx="40" ry="55" fill="url(#flame)" opacity="0.85"/>
+  <text x="256" y="88" text-anchor="middle" font-size="26" font-weight="bold" fill="#fed7aa" font-family="Arial,sans-serif">”(˜è™</text>
+</svg>

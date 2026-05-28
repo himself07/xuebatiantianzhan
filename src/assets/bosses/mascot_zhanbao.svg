@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="fur" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdba74"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+  </defs>
+  <circle cx="64" cy="68" r="52" fill="url(#fur)"/>
+  <circle cx="64" cy="72" r="38" fill="#ffedd5"/>
+  <polygon points="64,18 48,42 80,42" fill="url(#fur)"/>
+  <circle cx="48" cy="64" r="8" fill="#431407"/>
+  <circle cx="80" cy="64" r="8" fill="#431407"/>
+  <circle cx="50" cy="62" r="3" fill="#fff"/>
+  <circle cx="82" cy="62" r="3" fill="#fff"/>
+  <ellipse cx="64" cy="82" rx="10" ry="6" fill="#c2410c"/>
+  <circle cx="28" cy="70" r="14" fill="url(#fur)"/>
+  <circle cx="100" cy="70" r="14" fill="url(#fur)"/>
+</svg>

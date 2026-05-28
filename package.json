@@ -1,0 +1,37 @@
+{
+  "name": "xuebatiantianzhan",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev:weapp": "npm run gen:assets && taro build --type weapp --watch",
+    "build:weapp": "npm run gen:assets && taro build --type weapp && npm run verify:dist && npm run sync:project-config",
+    "rebuild:weapp": "rm -rf dist && npm run build:weapp",
+    "verify:dist": "node scripts/verify-dist.mjs",
+    "sync:project-config": "node scripts/sync-project-config.mjs",
+    "fix:weapp": "npm run rebuild:weapp",
+    "gen:assets": "npm run gen:boss-png && npm run gen:sfx",
+    "gen:boss-png": "node scripts/svg-to-png.mjs",
+    "gen:sfx": "node scripts/generate-sfx.mjs",
+    "gen:boss-nicknames": "python3 scripts/generate_boss_nicknames.py --prompts"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.29.3",
+    "@babel/preset-react": "^7.28.5",
+    "@babel/preset-typescript": "^7.28.5",
+    "@tarojs/components": "^4.2.0",
+    "@tarojs/plugin-framework-react": "^4.2.0",
+    "@tarojs/react": "^4.2.0",
+    "@tarojs/router": "^4.2.0",
+    "@tarojs/taro": "^4.2.0",
+    "@tarojs/webpack5-runner": "^4.2.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "webpack": "^5.88.0"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "@tarojs/cli": "^4.2.0",
+    "@tarojs/plugin-platform-weapp": "^4.2.0"
+  }
+}
